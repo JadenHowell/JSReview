@@ -59,7 +59,6 @@ form button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: all 0.5s ease;
 }
 
 .todo li {
@@ -90,8 +89,20 @@ form button:hover {
     opacity: 0.5;;
 }
 .fall {
-    transform: translateY(8rem) rotateZ(20deg);
-    opacity: 0;
+    animation-name: falling;
+    animation-duration: 0.5s;
+    animation-timing-function: cubic-bezier(0,.64,.47,1.01);
+}
+
+@keyframes falling {
+    0% {
+        transform: translateY(0rem) rotateZ(0deg);
+        opacity: 100;
+    }
+    100% {
+        transform: translateY(8rem) rotateZ(20deg);
+        opacity: 0;
+    }
 }
 
 select {

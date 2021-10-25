@@ -52,7 +52,7 @@ function deleteCheck(e){
         const todo = item.parentElement;
         todo.classList.add("fall"); //this activate the css animation
         removeLocalTodo(todo);
-        todo.addEventListener('transitionend', function(){
+        todo.addEventListener('animationend', function(){
             todo.remove();
         });
     }
@@ -68,7 +68,6 @@ function filterTodo(e) {
     
     const todos = todoList.childNodes;
     todos.forEach(function(todo){
-        console.log(todo)
         switch(e.target.value){
             case "all":
                 todo.style.display="flex";
