@@ -52,9 +52,10 @@ function deleteCheck(e){
         const todo = item.parentElement;
         todo.classList.add("fall"); //this activate the css animation
         removeLocalTodo(todo);
-        todo.addEventListener('animationend', function(){
-            todo.remove();
-        });
+        todo.addEventListener('animationend', () => 
+            {
+                todo.remove();
+            });
     }
 
     //check mark

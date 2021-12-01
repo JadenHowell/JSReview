@@ -88,12 +88,12 @@ form button:hover {
     text-decoration: line-through;
     opacity: 0.5;;
 }
+
 .fall {
     animation-name: falling;
     animation-duration: 0.5s;
     animation-timing-function: cubic-bezier(0,.64,.47,1.01);
 }
-
 @keyframes falling {
     0% {
         transform: translateY(0rem) rotateZ(0deg);
