@@ -1,0 +1,16 @@
+.listed-user .user {
+    width: 100px;
+    height: 50px;
+    border: 1pt;
+    border-radius: 5px;
+    border-color: black;
+    border-style: solid;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}
+
+.listed-user .user p {
+    text-align: center;
+}

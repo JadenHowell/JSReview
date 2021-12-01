@@ -1,0 +1,18 @@
+.header * {
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1pt;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: black;
+}
+
+.header .header-item {
+    margin: 15px 30px;
+}
